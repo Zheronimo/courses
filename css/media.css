@@ -12,17 +12,47 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-
+	.logo, .contacts,.header_title {
+		-ms-text-align-last: center;
+    	text-align-last: center;
+	}
+	.logo {
+		margin-bottom: 15px;
+	}
+	.header_title h1 {
+		font-size: 40px;
+	}
+	.header .header_title p {
+		font-size: 25px;
+	}
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+	.header_title h1 {
+		font-size: 30px;
+		text-align: center;
+	}
+	.header .header_title p {
+		font-size: 20px;
+	}
+	.header .top_line .contacts .wrapper a {
+		font-size: 30px;
+	}
+	.header .header_discounts .tabs .tab {
+		font-size: 14px;
+		padding: 20px 5px;
+	}
+	.header .header_discounts .tab_content .button_wrap {
+	    text-align: center;
+	}
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
-
+	.header .header_discounts .tabs .tab {
+		font-size: 12px;
+	}
 }
 
 
@@ -35,7 +65,7 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
-
+	
 }
 
 /* Small Devices, Tablets */

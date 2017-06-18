@@ -1,7 +1,10 @@
+/*****************Variables**************** */
+/*****************Global setting**************** */
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "RobotoRegular", sans-serif;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 16px;
+  color: #333333;
   min-width: 320px;
   position: relative;
   line-height: 1.42857;
@@ -15,5 +18,138 @@ body input:required:valid,
 body textarea:required:valid {
   color: green; }
 
+h1 {
+  color: #fff;
+  line-height: 56px;
+  margin: 0;
+  font-family: "Clean", sans-serif;
+  font-size: 60px;
+  font-weight: bold; }
+
+a, a:hover, a:visited, a:active, a:link {
+  color: #fff;
+  text-decoration: none; }
+
+ul, p {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+section {
+  padding: 58px 0 68px 0; }
+  section h2 {
+    font-family: "Clean", sans-serif;
+    font-size: 50px;
+    line-height: 56px;
+    text-align: center;
+    margin-bottom: 50px; }
+
+.wrapper .active {
+  text-decoration: underline; }
+.wrapper .tabs {
+  margin-bottom: 10px;
+  cursor: pointer;
+  text-transform: uppercase; }
+.wrapper .tab_item {
+  display: none; }
+  .wrapper .tab_item:first-child {
+    display: block; }
+
+.button_wrap {
+  text-align: center; }
+
+.button {
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  height: 46px;
+  line-height: 46px;
+  padding: 0 32px;
+  background-color: #9b1818;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "RobotoBold", sans-serif;
+  font-size: 16px;
+  border-radius: 3px;
+  color: #FFF; }
+  .button.btn_green {
+    background-color: #67bc5c; }
+  .button.btn_white {
+    color: #000;
+    background-color: #FFF; }
+
 .hidden {
   display: none; }
+
+.header {
+  min-height: 640px;
+  padding-top: 32px;
+  padding-bottom: 40px;
+  background-image: url("../img/top_bg.jpg");
+  background-position: top center;
+  background-size: cover;
+  color: #fff; }
+  .header .top_line .logo {
+    font-family: "RobotoBold", sans-serif;
+    font-size: 40px;
+    font-weight: bold; }
+  .header .top_line .contacts {
+    text-align: right; }
+    .header .top_line .contacts .wrapper a {
+      font-family: "RobotoBold", sans-serif;
+      font-size: 35px;
+      font-weight: 700;
+      line-height: 45px; }
+  .header .header_title {
+    margin-top: 70px;
+    margin-bottom: 40px; }
+    .header .header_title p {
+      font-family: "Clean", sans-serif;
+      font-size: 35px;
+      margin-top: 10px; }
+  .header .header_discounts {
+    font-family: "RobotoBold", sans-serif;
+    padding: 0; }
+    .header .header_discounts .tabs {
+      margin: 0;
+      font-size: 0; }
+      .header .header_discounts .tabs .tab {
+        display: inline-block;
+        padding: 25px 25px 15px 19px;
+        font-size: 16px;
+        background-color: rgba(255, 255, 255, 0.25);
+        -webkit-transition: all 0.8s ease;
+        transition: all 0.8s ease; }
+      .header .header_discounts .tabs .active {
+        color: #000;
+        background-color: rgba(255, 255, 255, 0.6); }
+    .header .header_discounts .tab_content {
+      padding: 29px 32px 15px 19px;
+      background-color: rgba(255, 255, 255, 0.6);
+      color: #000;
+      text-transform: uppercase;
+      font-size: 18px; }
+      .header .header_discounts .tab_content .tab_item {
+        margin-bottom: 24px; }
+        .header .header_discounts .tab_content .tab_item li {
+          padding-left: 35px;
+          margin-bottom: 12px;
+          position: relative;
+          line-height: 25px;
+          margin-bottom: 0px; }
+          .header .header_discounts .tab_content .tab_item li .my {
+            position: absolute;
+            top: 3px;
+            left: 0;
+            color: rgba(0, 0, 0, 0.48);
+            font-size: 24px; }
+      .header .header_discounts .tab_content .button_wrap {
+        -ms-text-align-last: right;
+        text-align: right;
+        margin-bottom: 20px; }
+        .header .header_discounts .tab_content .button_wrap .button:hover {
+          background-color: #e03939; }
+
+/*# sourceMappingURL=main.css.map */
