@@ -2,12 +2,15 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-
+	.tizer .tizer_item > div {
+		display: block;
+		text-align: center;
+	}
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+	
 }
 
 /* Small Devices, Tablets */
@@ -24,6 +27,17 @@
 	}
 	.header .header_title p {
 		font-size: 25px;
+	}
+	.about_text h3 {
+		font-size: 25px;
+	}
+	
+	
+}
+@media only screen and (max-width : 600px) {
+	.about_item {
+		width: 100%;
+		text-align: center;
 	}
 }
 

@@ -44,7 +44,12 @@ section {
     font-size: 50px;
     line-height: 56px;
     text-align: center;
+    margin-top: 0;
     margin-bottom: 50px; }
+  section h3 {
+    font-size: 30px;
+    margin: 0;
+    color: #9b1818; }
 
 .wrapper .active {
   text-decoration: underline; }
@@ -151,5 +156,38 @@ section {
         margin-bottom: 20px; }
         .header .header_discounts .tab_content .button_wrap .button:hover {
           background-color: #e03939; }
+
+.tizer {
+  padding: 10px 0 30px 0;
+  background-color: #c6d8ee;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#c6d8ee), to(#e8eff7));
+  background-image: linear-gradient(#c6d8ee, #e8eff7);
+  font-family: "Clean", sans-serif;
+  color: #003469; }
+  .tizer .tizer_icon, .tizer .tizer_text {
+    display: inline-block;
+    vertical-align: bottom; }
+  .tizer .tizer_icon {
+    font-size: 75px; }
+    .tizer .tizer_icon .my {
+      vertical-align: bottom;
+      font-size: 75px;
+      line-height: 48px; }
+      .tizer .tizer_icon .my span {
+        font-family: "RobotoRegular", sans-serif;
+        letter-spacing: -10px;
+        padding-right: 15px;
+        line-height: 73px; }
+  .tizer .tizer_text {
+    font-size: 13px;
+    text-transform: uppercase; }
+    .tizer .tizer_text strong {
+      font-size: 23px; }
+
+.about_item .about_icon .my {
+  font-size: 100px;
+  color: #9b1818; }
+.about_item .about_text strong {
+  font-weight: 700; }
 
 /*# sourceMappingURL=main.css.map */
