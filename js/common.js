@@ -7,6 +7,10 @@ $(document).ready(function() {
 	$(window).resize(function() {
 		wResize();
 	});
+	//Поле телефона
+	jQuery(function($){
+	   $("#phone").mask("+7(999) 999-99-99");
+    });
 	// Tab
 	$('.contacts .tab').click(function() {
 		$('.contacts .tab').removeClass('active').eq($(this).index()).addClass('active');

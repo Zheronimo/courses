@@ -185,7 +185,21 @@
 							</div>
 							</div>
 						</div>
-						<div class="col-md-4">2</div>
+						<div class="col-md-4">
+							<form class="form" action="">
+								<h3>Связаться с нами</h3>
+								<label for="name">Ваше имя:</label><br>
+								<input type="text" name="name" id="name"><br>
+								<label for="phone">Ваш телефон:</label><br>
+								<input type="tel" name="tel" id="phone"><br>
+								<label for="cityname">Ваш город:</label><br>
+								<select name="cityname" id="cityname">
+									<option value="Moskov">Москва</option>
+									<option value="Karaganda">Караганда</option>
+								</select><br>
+								<input class="button btn_green" type="submit" value="Отправить заявку">
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -203,6 +217,7 @@
 	
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 	<script src="libs/modernizr/modernizr.js"></script>
+	<script src="libs/maskedinput/jquery.maskedinput.js"></script>
 	
 	<script src="js/common.js"></script>
 
