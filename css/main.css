@@ -220,6 +220,8 @@ section {
       outline: none; }
   .form select {
     margin-bottom: 37px; }
+  .form .button:hover {
+    background-color: #aadaa4; }
 
 .reviews {
   background-image: url("../img/reviews_bg.jpg");
@@ -259,5 +261,37 @@ section {
     float: none;
     line-height: 24px;
     font-size: 15px; }
+  .reviews .owl-carousel .owl-nav div {
+    width: 34px;
+    height: 140px;
+    position: absolute;
+    top: 5%;
+    opacity: 0.6; }
+    .reviews .owl-carousel .owl-nav div:hover {
+      opacity: 1; }
+    .reviews .owl-carousel .owl-nav div.owl-prev {
+      background-image: url(../img/arrow.png);
+      right: 0;
+      -webkit-transform: rotate(180deg);
+              transform: rotate(180deg); }
+    .reviews .owl-carousel .owl-nav div.owl-next {
+      background-image: url(../img/arrow.png);
+      left: 0; }
+
+.request {
+  padding: 38px 0 30px 0;
+  text-align: center;
+  background: url(../img/red_bg.jpg) 0 0 no-repeat;
+  background-size: cover; }
+  .request p {
+    color: #fff;
+    padding: 10px 25px;
+    background-color: rgba(255, 255, 255, 0.13);
+    text-transform: uppercase;
+    font-size: 26px;
+    line-height: 36px;
+    margin-bottom: 42px; }
+  .request .button:hover {
+    background-color: #e6e6e6; }
 
 /*# sourceMappingURL=main.css.map */

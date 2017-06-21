@@ -11,7 +11,8 @@ $(document).ready(function() {
     items: 1,
     nav:true,
     responsiveClass:true,
-    responsive: true
+    responsive: true,
+    navText: ""
 });
 
 	// Подгоняем высоту фона под размер экрана
