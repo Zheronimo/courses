@@ -23,6 +23,9 @@ body
 body input:focus:required:invalid,
 body textarea:focus:required:invalid
 	color: red
+	-webkit-box-shadow: 0 0 0 2px $color-red  
+	box-shadow: 0 0 0 2px $color-red  
+	border-color: $color-red
 body input:required:valid,
 body textarea:required:valid
 	color: green
@@ -101,5 +104,6 @@ section
 @import "iclude/header"
 @import "iclude/tizer"
 @import "iclude/about"
+@import "iclude/reviews"
 
 	

@@ -1,4 +1,19 @@
 $(document).ready(function() {
+	//Паралакс эффекты
+	$.stellar({
+		responsive: true,
+		horizontalOffset: 60
+	});
+
+	//Карусель
+	$('.owl-carousel').owlCarousel({
+    loop: true,
+    items: 1,
+    nav:true,
+    responsiveClass:true,
+    responsive: true
+});
+
 	// Подгоняем высоту фона под размер экрана
 	function wResize() {
 		$(".header").css("min-height", $(window).height());

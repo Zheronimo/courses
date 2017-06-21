@@ -12,7 +12,10 @@ body {
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {
-  color: red; }
+  color: red;
+  -webkit-box-shadow: 0 0 0 2px #9b1818;
+  box-shadow: 0 0 0 2px #9b1818;
+  border-color: #9b1818; }
 
 body input:required:valid,
 body textarea:required:valid {
@@ -202,21 +205,59 @@ section {
     text-align: center;
     font-size: 22px;
     color: #444444;
-    margin-bottom: 30px; }
+    margin-bottom: 25px; }
   .form input[type=text], .form input[type=tel], .form select {
     width: 100%;
-    margin-bottom: 17px; }
+    height: 40px;
+    margin-bottom: 17px;
+    text-indent: 10px;
+    font-size: 20px; }
     .form input[type=text]:focus, .form input[type=tel]:focus, .form select:focus {
-      -webkit-box-shadow: none;
-      box-shadow: none;
+      -webkit-box-shadow: 0 0 0 2px #67bc5c;
+      box-shadow: 0 0 0 2px #67bc5c;
       border-color: #67bc5c;
-      outline: none; }
-    .form input[type=text]:active, .form input[type=tel]:active, .form select:active {
-      border-color: #67bc5c;
+      border-radius: 3px;
       outline: none; }
   .form select {
-    width: 100%;
-    height: 32px;
     margin-bottom: 37px; }
+
+.reviews {
+  background-image: url("../img/reviews_bg.jpg");
+  background-size: cover;
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+  color: #FFF;
+  text-align: center; }
+  .reviews h2 {
+    margin-bottom: 80px; }
+  .reviews .owl-carousel .carousel_item .img_wrap {
+    text-align: center; }
+    .reviews .owl-carousel .carousel_item .img_wrap img {
+      display: inline-block;
+      width: 165px;
+      height: 165px;
+      border: 10px solid #585a5b;
+      border-radius: 50%; }
+  .reviews .owl-carousel .carousel_item h4 {
+    position: relative;
+    margin: 35px 0 55px 0;
+    padding: 0;
+    font-family: "Times New Roman", sans-serif;
+    font-size: 22px;
+    font-style: italic; }
+    .reviews .owl-carousel .carousel_item h4::after {
+      content: "";
+      position: absolute;
+      width: 80px;
+      height: 1px;
+      bottom: -20px;
+      left: 46%;
+      background: #cea380; }
+  .reviews .owl-carousel .carousel_item p {
+    margin: auto;
+    display: inline-block;
+    float: none;
+    line-height: 24px;
+    font-size: 15px; }
 
 /*# sourceMappingURL=main.css.map */
