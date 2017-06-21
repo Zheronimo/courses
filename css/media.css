@@ -42,6 +42,10 @@
 	.about_item .about_icon .my {
 		line-height: 100px;
 	}
+	.request p {
+		padding: 10px 10px;
+		font-size: 18px;
+	}
 	
 }
 @media only screen and (max-width : 600px) {
