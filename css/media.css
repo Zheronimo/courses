@@ -46,7 +46,12 @@
 		padding: 10px 10px;
 		font-size: 18px;
 	}
-	
+	.address .address_title h2 {
+		margin-bottom: 20px;
+	}
+	.address .address_title .tabs .tab {
+		padding: 0 25px;
+	}
 }
 @media only screen and (max-width : 600px) {
 	.about_item {
@@ -77,6 +82,9 @@
 	}
 	.header .header_discounts .tab_content .button_wrap {
 	    text-align: center;
+	}
+	footer .tab_item a {
+		font-size: 30px;
 	}
 }
 

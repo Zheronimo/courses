@@ -1,4 +1,7 @@
 $(document).ready(function() {
+	//Popup
+	$('.popup').magnificPopup({type:'image'});
+
 	//Паралакс эффекты
 	$.stellar({
 		responsive: true,
@@ -7,7 +10,7 @@ $(document).ready(function() {
 
 	//Карусель
 	$('.owl-carousel').owlCarousel({
-    loop: true,
+    // loop: true,
     items: 1,
     nav:true,
     responsiveClass:true,
@@ -37,6 +40,17 @@ $(document).ready(function() {
 		$('.header_discounts .tab').removeClass('active').eq($(this).index()).addClass('active');
 		$('.header_discounts .tab_item').hide().eq($(this).index()).fadeIn()
 	}).eq(0).addClass('active');
+
+	$('.address .tab').click(function() {
+		$('.address .tab').removeClass('active').eq($(this).index()).addClass('active');
+		$('.address .tab_item').hide().eq($(this).index()).fadeIn()
+	}).eq(0).addClass('active');
+
+	$('footer .tab').click(function() {
+		$('footer .tab').removeClass('active').eq($(this).index()).addClass('active');
+		$('footer .tab_item').hide().eq($(this).index()).fadeIn()
+	}).eq(0).addClass('active');
+
 	//Цели для Яндекс.Метрики и Google Analytics
 	$(".count_element").on("click", (function() {
 		ga("send", "event", "goal", "goal");

@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="libs/myFonts/myFont.css" />
 	<link rel="stylesheet" href="libs/olwcarousel/assets/owl.carousel.min.css" />
 	<link rel="stylesheet" href="libs/olwcarousel/assets/owl.theme.default.min.css" />
+	<link rel="stylesheet" href="libs/magnific-popup/magnific-popup.css">
 	<link rel="stylesheet" href="css/fonts.css" />
 	<link rel="stylesheet" href="css/main.css" />
 	<link rel="stylesheet" href="css/media.css" />
@@ -21,7 +22,7 @@
 </head>
 <body>
 	
-	<div class="hidden"></div>
+	
 	<header class="header">
 		<div class="container">
 			<div class="row">
@@ -188,7 +189,7 @@
 							</div>
 						</div>
 						<div class="col-md-4">
-							<form class="form">
+							<form id="form" class="form">
 								<h3>Связаться с нами</h3>
 								<label><span>Ваше имя:</span><br>
 									<input type="text" name="name" id="name" required><br>
@@ -226,7 +227,7 @@
 					<div class="owl-carousel">
 						<div class="carousel_item">
 							<div class="img_wrap">
-								<img src="img/review.jpg" alt="photo">
+								<a href="img/review.jpg" class="popup"><img src="img/review.jpg" alt="photo"></a>
 							</div>
 							<h4>Соломатина Наталья</h4>
 							<div class="row">
@@ -238,7 +239,7 @@
 						</div>
 						<div class="carousel_item">
 							<div class="img_wrap">
-								<img src="img/review.jpg" alt="photo">
+								<a href="img/review.jpg" class="popup"><img src="img/review.jpg" alt="photo"></a>
 							</div>
 							<h4>Соломатина Наталья</h4>
 							<div class="row">
@@ -259,14 +260,59 @@
 					<p>
 						Повышение знаний с ProKurs — это оптимальное сочетание интенсива и углубленного подхода.
 					</p>
-					<button class="button btn_white">Отправить заявку</button>
+					<a href="#" class="button btn_white">Отправить заявку</a>
 				</div>
 			</div>
 		</div>
 	</section>
 	<section class="address">
-		
+		<div class="address_title">
+			<h2>Как нас найти:</h2>
+			<div class="tabs">
+				<span class="tab">В Москве </span> 
+				<span class="tab">в Караганде</span>
+			</div>
+			<div class="wrapper">
+				<div class="tab_content">
+					<div class="tab_item">
+						<span>Чаянова ул., дом 20, корпус 2</span>
+						<div class="map">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1121.9486626407645!2d37.59746107199683!3d55.777655065047895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a1798e79411%3A0xdaf8486774d06d73!2z0YPQuy4g0KfQsNGP0L3QvtCy0LAsIDIwLCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTI1MDQ3!5e0!3m2!1sru!2sua!4v1498128572792" width="100%" height="480" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</div>
+					</div>
+					<div class="tab_item">
+						<span>Ленина ул., дом 52, корпус 2</span>
+						<div class="map">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1530.610128003657!2d73.0978748536427!3d49.82048615872901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x424346e670895b45%3A0xe1fdff1d1b03f91b!2z0L_RgNC-0YHQvy4g0JvQtdC90LjQvdCwIDUyLCDQmtCw0YDQsNCz0LDQvdC00LAgMTAwMDAwLCDQmtCw0LfQsNGF0YHRgtCw0L0!5e0!3m2!1sru!2sua!4v1498129145339" width="100%" height="480" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2>Остались вопросы?</h2>
+					<p>Наш специалист ответит на любой ваш вопрос</p>
+					<div class="contacts">
+							<div class="wrapper">
+								<div class="tabs">
+									<span class="tab">Москва </span> / 
+									<span class="tab">Караганда</span>
+								</div>
+								<div class="tab_content">
+									<div class="tab_item"><a href="tel:+79999999999"> +7 (999) 999-99-99 </a></div>
+									<div class="tab_item"><a href="tel:+72128888888"> +7 (212) 888-88-88</a></div>
+								</div>
+							</div>
+						</div>
+						<a href="#" class="button btn_red">Заказать звонок</a>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 
 
@@ -282,6 +328,7 @@
 	<script src="libs/modernizr/modernizr.js"></script>
 	<script src="libs/maskedinput/jquery.maskedinput.js"></script>
 	<script src='libs/stellar/jquery.stellar.min.js'></script>
+	<script src='libs/magnific-popup/jquery.magnific-popup.min.js' ></script>
 	
 	
 	<script src="js/common.js"></script>
