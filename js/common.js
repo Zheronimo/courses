@@ -82,3 +82,16 @@ $(document).ready(function() {
 	});
 	
 });
+$(window).load(function() {
+	//Animate
+	$(".header_title h1").animated("fadeInDown", "fadeOut");	
+	$(".header_title p").animated("fadeInUp", "fadeOut");
+	$(".header .header_discounts").animated("flipInY", "fadeOut");
+	$(".about_item").animated("fadeInRight", "fadeOutRight");
+	$(".form").animated("zoomInRight", "fadeOut");
+	$(".carousel_item .img_wrap img").animated("shake", "fadeOut");
+	$(".request p").animated("fadeInUp", "fadeOut");
+	$("footer").animated("bounceInUp", "fadeOut");
+
+
+});
