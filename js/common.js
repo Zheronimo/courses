@@ -1,6 +1,7 @@
 $(document).ready(function() {
 	//Popup
 	$('.popup').magnificPopup({type:'image'});
+	$('.popup_form').magnificPopup();
 
 	//Паралакс эффекты
 	$.stellar({
@@ -67,7 +68,8 @@ $(document).ready(function() {
 
 	//Аякс отправка форм
 	//Документация: http://api.jquery.com/jquery.ajax/
-	$("#form").submit(function(e) {
+	$("form").submit(function(e) {
+		var ths = $(this)
 		e.preventDefault;
 		$.ajax({
 			type: "POST",
@@ -76,9 +78,14 @@ $(document).ready(function() {
 		}).done(function() {
 			alert("Спасибо за заявку!");
 			setTimeout(function() {
-				$.fancybox.close();
+				var magnificPopup = $.magnificPopup.instance;
+				//save instance in magnifigPopup variable
+				magnificPopup.close();
+				//Close popup that is currently opened
+				ths.trigger('reset');
 			}, 1000);
 		});
+		return false;
 	});
 	
 });
@@ -88,10 +95,11 @@ $(window).load(function() {
 	$(".header_title p").animated("fadeInUp", "fadeOut");
 	$(".header .header_discounts").animated("flipInY", "fadeOut");
 	$(".about_item").animated("fadeInRight", "fadeOutRight");
-	$(".form").animated("zoomInRight", "fadeOut");
+	$(".about .form").animated("zoomInRight", "fadeOut");
+	$(".form").animated("zoomInRight", "zoomInRight");
 	$(".carousel_item .img_wrap img").animated("shake", "fadeOut");
 	$(".request p").animated("fadeInUp", "fadeOut");
-	$("footer").animated("bounceInUp", "fadeOut");
+	$("footer").animated("fadeInUp", "fadeOut");
 
 
 });

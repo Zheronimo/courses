@@ -93,6 +93,14 @@ section {
 .map {
   min-height: 480px; }
 
+.hidden {
+  display: none; }
+
+#hidden_form, #form_back {
+  max-width: 420px;
+  margin: auto;
+  position: relative; }
+
 .header {
   min-height: 640px;
   padding-top: 32px;

@@ -80,7 +80,7 @@
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum eveniet quam et voluptatum odio aut illo sit totam numquam illum, nemo non, laudantium dolorem tempore? Quasi quod explicabo, iure id!
 								</p></div>
 								<div class="button_wrap">
-									<a href="#" class="button">Начать обучение</a>
+									<a href="#hidden_form" class="button popup_form">Начать обучение</a>
 								</div>
 							</div>
 						</div>
@@ -190,10 +190,10 @@
 							</div>
 						</div>
 						<div class="col-md-4">
-							<form id="form" class="form">
+							<form class="form">
 								<h3>Связаться с нами</h3>
 								<label><span>Ваше имя:</span><br>
-									<input type="text" name="name" id="name" required><br>
+									<input type="text" name="name" id="name" required pattern="^[A-Za-zА-Яа-яЁё\s]+$"><br>
 								</label>
 								<label><span>Ваш телефон:</span><br>
 									<input type="tel" name="tel" id="phone" required><br>
@@ -261,7 +261,7 @@
 					<p>
 						Повышение знаний с ProKurs — это оптимальное сочетание интенсива и углубленного подхода.
 					</p>
-					<a href="#" class="button btn_white">Отправить заявку</a>
+					<a href="#hidden_form" class="button btn_white popup_form">Отправить заявку</a>
 				</div>
 			</div>
 		</div>
@@ -298,23 +298,54 @@
 					<h2>Остались вопросы?</h2>
 					<p>Наш специалист ответит на любой ваш вопрос</p>
 					<div class="contacts">
-							<div class="wrapper">
-								<div class="tabs">
-									<span class="tab">Москва </span> / 
-									<span class="tab">Караганда</span>
-								</div>
-								<div class="tab_content">
-									<div class="tab_item"><a href="tel:+79999999999"> +7 (999) 999-99-99 </a></div>
-									<div class="tab_item"><a href="tel:+72128888888"> +7 (212) 888-88-88</a></div>
-								</div>
+						<div class="wrapper">
+							<div class="tabs">
+								<span class="tab">Москва </span> / 
+								<span class="tab">Караганда</span>
+							</div>
+							<div class="tab_content">
+								<div class="tab_item"><a href="tel:+79999999999"> +7 (999) 999-99-99 </a></div>
+								<div class="tab_item"><a href="tel:+72128888888"> +7 (212) 888-88-88</a></div>
 							</div>
 						</div>
-						<a href="#" class="button btn_red">Заказать звонок</a>
+					</div>
+					<a href="#form_back" class="button btn_red popup_form">Заказать звонок</a>
 				</div>
 			</div>
 		</div>
 	</footer>
-
+	<div class="hidden">
+		<form id="hidden_form" class="form">
+			<h3>Связаться с нами</h3>
+			<label><span>Ваше имя:</span><br>
+				<input type="text" name="name" id="name" required pattern="^[A-Za-zА-Яа-яЁё\s]+$"><br>
+			</label>
+			<label><span>Ваш телефон:</span><br>
+				<input type="tel" name="tel" id="phone" required pattern="^[0-9]+$"><br>
+			</label>
+			<label><span>Ваш город:</span><br>
+				<select name="cityname" id="cityname">
+					<option>Москва</option>
+					<option>Караганда</option>
+				</select>
+			</label>
+			<div class="button_wrap">
+				<button class="button btn_green " type="submit">Отправить заявку</button>
+			</div>
+		</form>
+		<form id="form_back" class="form">
+			<h3>Заказать звонок</h3>
+			<label><span>Ваше имя:</span><br>
+				<input type="text" name="name" id="name" required pattern="^[A-Za-zА-Яа-яЁё\s]+$"><br>
+			</label>
+			<label><span>Ваш телефон:</span><br>
+				<input type="tel" name="tel" id="phone" required><br>
+			</label>
+			<div class="button_wrap">
+				<button class="button btn_green" type="submit">Отправить заявку</button>
+			</div>
+		</form>
+	</div>
 
 
 	<!--[if lt IE 9]>
